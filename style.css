@@ -1,0 +1,95 @@
+/* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  /* padding-top: 20px; */
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+  background-color: #111;
+  width: 25%;
+  /*filter: blur(5px);
+  -webkit-filter: blur(5px);
+  z-index: 1;*/
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+  background-color: rgb(204, 204, 204);
+  width: 75%;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: #fff;
+  width: 210px;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.box {
+  background-color: #111;
+  height: 70px;
+  width: 100%;
+  font-size: 50px;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: #fff;
+}
+
+a{
+  color: #212529 !important;
+  text-decoration: none !important;
+}
+
+.card{
+  display: inline;
+}
+
+.card-title{
+  cursor: pointer;
+}
+
+a:hover{
+  color: #fff !important;
+  transition-duration: 0.5s;
+}
+
+
+.card:hover{
+  background-color: rgba(0,0,0,0.9);
+  color: #fff !important;
+  transition-duration: 0.5s;
+}
+
+
+#blog1{
+  height: 85%;
+  width: 100%;
+  background-color: aqua;
+
+}
+
+#blog2{
+  height: 85%;
+  width: 100%;
+  background-color: yellowgreen;
+  
+}
+
